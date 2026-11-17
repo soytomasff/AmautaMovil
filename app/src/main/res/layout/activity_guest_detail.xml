@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/surface">
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:fillViewport="true">
+        <LinearLayout android:id="@+id/contentColumn" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="vertical"
+            android:padding="20dp">
+            <include layout="@layout/view_brand_header" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="@string/guest_detail_title" android:textSize="25sp"
+                android:textStyle="bold" android:textColor="@color/ink" />
+            <TextView android:id="@+id/detailGuestName" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="6dp"
+                android:textSize="18sp" android:textColor="@color/muted" />
+            <LinearLayout android:id="@+id/guestDetailFields" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="vertical"
+                android:padding="18dp" android:layout_marginTop="20dp"
+                android:background="@drawable/bg_card" android:elevation="2dp" />
+            <TextView android:id="@+id/guestDetailMessage" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="12dp"
+                android:accessibilityLiveRegion="polite" android:visibility="gone" />
+            <Button android:id="@+id/detailEditGuest" android:layout_width="match_parent"
+                android:layout_height="52dp" android:layout_marginTop="20dp"
+                android:text="@string/edit_guest" />
+            <Button android:id="@+id/detailDeleteGuest"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="match_parent" android:layout_height="52dp"
+                android:layout_marginTop="8dp" android:text="@string/delete_guest" />
+            <Button android:id="@+id/detailBackGuests"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="match_parent" android:layout_height="48dp"
+                android:layout_marginTop="8dp" android:text="@string/back_to_guests" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/view_navigation" />
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="horizontal" android:background="@color/brand_dark"
+    android:paddingHorizontal="8dp" android:paddingVertical="6dp" android:elevation="8dp">
+    <TextView android:id="@+id/navHome" android:layout_width="0dp"
+        android:layout_height="64dp" android:layout_weight="1" android:text="@string/nav_home"
+        android:gravity="center" android:textSize="12sp" android:textStyle="bold"
+        android:drawableTop="@drawable/ic_nav_home" android:drawablePadding="3dp"
+        android:textColor="@color/nav_text" android:background="@drawable/bg_nav_item"
+        android:clickable="true" android:focusable="true" android:maxLines="1" />
+    <TextView android:id="@+id/navRooms" android:layout_width="0dp"
+        android:layout_height="64dp" android:layout_weight="1" android:text="@string/nav_rooms"
+        android:gravity="center" android:textSize="12sp" android:textStyle="bold"
+        android:drawableTop="@drawable/ic_nav_rooms" android:drawablePadding="3dp"
+        android:textColor="@color/nav_text" android:background="@drawable/bg_nav_item"
+        android:clickable="true" android:focusable="true" android:maxLines="1" />
+    <TextView android:id="@+id/navGuests" android:layout_width="0dp"
+        android:layout_height="64dp" android:layout_weight="1" android:text="@string/nav_guests"
+        android:gravity="center" android:textSize="12sp" android:textStyle="bold"
+        android:drawableTop="@drawable/ic_nav_guests" android:drawablePadding="3dp"
+        android:textColor="@color/nav_text" android:background="@drawable/bg_nav_item"
+        android:clickable="true" android:focusable="true" android:maxLines="1" />
+    <TextView android:id="@+id/navReservations" android:layout_width="0dp"
+        android:layout_height="64dp" android:layout_weight="1" android:text="@string/nav_more"
+        android:gravity="center" android:textSize="12sp" android:textStyle="bold"
+        android:drawableTop="@drawable/ic_nav_reservations" android:drawablePadding="3dp"
+        android:textColor="@color/nav_text" android:background="@drawable/bg_nav_item"
+        android:clickable="true" android:focusable="true" android:maxLines="1" />
+</LinearLayout>

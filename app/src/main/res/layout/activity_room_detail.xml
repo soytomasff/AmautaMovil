@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/surface">
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:fillViewport="true">
+    <LinearLayout android:id="@+id/contentColumn" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="20dp">
+        <include layout="@layout/view_brand_header" />
+        <Button android:id="@+id/backToRoomsButton" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="@string/back_to_rooms" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/room_detail_title" android:textSize="25sp"
+            android:textStyle="bold" android:textColor="@color/ink"
+            android:layout_marginTop="16dp" android:layout_marginBottom="20dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/room_detail_number" />
+        <TextView android:id="@+id/detailNumber" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textSize="20sp" android:textColor="@color/ink"
+            android:layout_marginBottom="16dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/room_detail_type" />
+        <TextView android:id="@+id/detailType" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textSize="20sp" android:textColor="@color/ink"
+            android:layout_marginBottom="16dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/room_detail_price" />
+        <TextView android:id="@+id/detailPrice" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textSize="20sp" android:textColor="@color/ink"
+            android:layout_marginBottom="16dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/room_detail_capacity" />
+        <TextView android:id="@+id/detailCapacity" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textSize="20sp" android:textColor="@color/ink"
+            android:layout_marginBottom="16dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/room_detail_state" />
+        <TextView android:id="@+id/detailState" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textSize="20sp" android:textColor="@color/ink"
+            android:layout_marginBottom="16dp" />
+        <TextView android:id="@+id/detailMessage" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textColor="@color/error"
+            android:accessibilityLiveRegion="polite" />
+        <Button android:id="@+id/retryDetailButton" android:layout_width="wrap_content"
+            android:layout_height="48dp" android:text="@string/retry" android:visibility="gone"
+            android:layout_marginTop="12dp" />
+        <TextView android:id="@+id/activeStaysTitle" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="@string/active_stays"
+            android:textStyle="bold" android:textSize="18sp" android:layout_marginTop="24dp" />
+        <LinearLayout android:id="@+id/activeStaysList" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="vertical" />
+        <Button android:id="@+id/completeCleaningButton" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="@string/complete_cleaning"
+            android:visibility="gone" android:layout_marginTop="16dp" />
+        <Button android:id="@+id/finishMaintenanceButton" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="@string/finish_maintenance"
+            android:visibility="gone" android:layout_marginTop="16dp" />
+        <TextView android:id="@+id/historyTitle" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="@string/room_history"
+            android:textStyle="bold" android:textSize="18sp" android:layout_marginTop="24dp" />
+        <LinearLayout android:id="@+id/historyList" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="vertical" />
+    </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/view_navigation" />
+</LinearLayout>

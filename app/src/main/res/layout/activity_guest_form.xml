@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/surface">
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:fillViewport="true">
+    <LinearLayout android:id="@+id/contentColumn" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="20dp">
+        <include layout="@layout/view_brand_header" />
+        <TextView android:id="@+id/guestFormTitle" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textSize="25sp"
+            android:textStyle="bold" android:textColor="@color/ink"
+            android:layout_marginVertical="16dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/guest_first_name" android:labelFor="@id/guestFirstName"
+            android:textStyle="bold" android:textColor="@color/ink" />
+        <EditText android:id="@+id/guestFirstName" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="@string/guest_first_name"
+            android:inputType="textPersonName" android:maxLength="255" android:minHeight="52dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/guest_last_name" android:labelFor="@id/guestLastName"
+            android:textStyle="bold" android:textColor="@color/ink" android:layout_marginTop="14dp" />
+        <EditText android:id="@+id/guestLastName" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="@string/guest_last_name"
+            android:inputType="textPersonName" android:maxLength="255" android:minHeight="52dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/guest_document" android:labelFor="@id/guestDni"
+            android:textStyle="bold" android:textColor="@color/ink" android:layout_marginTop="14dp" />
+        <EditText android:id="@+id/guestDni" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="@string/guest_document"
+            android:inputType="textCapCharacters" android:maxLength="20" android:minHeight="52dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/guest_origin" android:labelFor="@id/guestOrigin"
+            android:textStyle="bold" android:textColor="@color/ink" android:layout_marginTop="14dp" />
+        <EditText android:id="@+id/guestOrigin" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="@string/guest_origin"
+            android:inputType="textCapSentences" android:maxLength="255" android:minHeight="52dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/guest_country" android:labelFor="@id/guestCountry"
+            android:textStyle="bold" android:textColor="@color/ink" android:layout_marginTop="14dp" />
+        <EditText android:id="@+id/guestCountry" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="@string/guest_country"
+            android:inputType="textCapWords" android:maxLength="255" android:minHeight="52dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/guest_profession" android:labelFor="@id/guestProfession"
+            android:textStyle="bold" android:textColor="@color/ink" android:layout_marginTop="14dp" />
+        <EditText android:id="@+id/guestProfession" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="@string/guest_profession"
+            android:inputType="textCapWords" android:maxLength="255" android:minHeight="52dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/guest_phone" android:labelFor="@id/guestPhone"
+            android:textStyle="bold" android:textColor="@color/ink" android:layout_marginTop="14dp" />
+        <EditText android:id="@+id/guestPhone" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="@string/guest_phone"
+            android:inputType="phone" android:maxLength="255" android:minHeight="52dp" />
+        <TextView android:id="@+id/guestFormMessage" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="12dp"
+            android:textColor="@color/error" android:accessibilityLiveRegion="polite" />
+        <Button android:id="@+id/saveGuest" android:layout_width="match_parent"
+            android:layout_height="52dp" android:text="@string/save_guest" />
+        <Button android:id="@+id/cancelGuest" style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" android:text="@string/cancel" />
+    </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/view_navigation" />
+</LinearLayout>

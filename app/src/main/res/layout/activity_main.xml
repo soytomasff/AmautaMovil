@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="true" android:background="@color/brand_dark">
+    <LinearLayout android:id="@+id/contentColumn" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="24dp" android:gravity="center_vertical">
+        <ImageView android:layout_width="190dp" android:layout_height="130dp"
+            android:src="@drawable/logo_ama" android:scaleType="fitCenter"
+            android:contentDescription="@string/app_name" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/brand_tagline" android:textSize="15sp"
+            android:textColor="@color/brand_light_text" android:layout_marginTop="4dp"
+            android:layout_marginBottom="32dp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="24dp"
+            android:background="@drawable/bg_card">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="@string/login_title" android:textStyle="bold" android:textSize="25sp"
+                android:textColor="@color/ink" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="@string/login_subtitle" android:textSize="14sp"
+                android:textColor="@color/muted" android:layout_marginTop="6dp"
+                android:layout_marginBottom="26dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="@string/username_label" android:labelFor="@id/username"
+                android:textStyle="bold" android:textColor="@color/ink" />
+            <EditText android:id="@+id/username" android:layout_width="match_parent"
+                android:layout_height="56dp" android:inputType="textPersonName"
+                android:singleLine="true" android:autofillHints="username"
+                android:hint="@string/username_label" android:layout_marginBottom="16dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="@string/password_label" android:labelFor="@id/password"
+                android:textStyle="bold" android:textColor="@color/ink" />
+            <EditText android:id="@+id/password" android:layout_width="match_parent"
+                android:layout_height="56dp" android:inputType="textPassword"
+                android:singleLine="true" android:imeOptions="actionDone"
+                android:autofillHints="password"
+                android:hint="@string/password_label" android:layout_marginBottom="24dp" />
+            <Button android:id="@+id/loginButton" android:layout_width="match_parent"
+                android:layout_height="54dp" android:text="@string/login_button" />
+            <TextView android:id="@+id/loginMessage" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="16dp"
+                android:textColor="@color/error" android:accessibilityLiveRegion="polite"
+                android:visibility="gone" />
+        </LinearLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/login_footer" android:gravity="center"
+            android:textColor="@color/brand_light_text" android:textSize="12sp"
+            android:layout_marginTop="24dp" />
+    </LinearLayout>
+</ScrollView>

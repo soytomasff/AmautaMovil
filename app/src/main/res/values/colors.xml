@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="surface">#FFF2F5FA</color>
+    <color name="brand">#FF17263D</color>
+    <color name="brand_dark">#FF0B1220</color>
+    <color name="brand_raised">#FF20324D</color>
+    <color name="brand_light_text">#FFDBE8F6</color>
+    <color name="gold">#FFD4AF37</color>
+    <color name="ink">#FF17283F</color>
+    <color name="muted">#FF52657D</color>
+    <color name="line">#FFDCE4EE</color>
+    <color name="error">#FF9C2432</color>
+    <color name="error_surface">#FFFDECEF</color>
+    <color name="info_surface">#FFE9F0F9</color>
+    <color name="free_text">#FF14613D</color>
+    <color name="free_surface">#FFDDF4E8</color>
+    <color name="occupied_text">#FF9A302C</color>
+    <color name="occupied_surface">#FFFBE7E5</color>
+    <color name="cleaning_text">#FF805000</color>
+    <color name="cleaning_surface">#FFFFEFCF</color>
+    <color name="maintenance_text">#FF4D4688</color>
+    <color name="maintenance_surface">#FFEAE8F9</color>
+</resources>

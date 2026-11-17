@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- HTTP is allowed only in debug so the emulator and a physical device can reach
+         a developer's local Spring Boot server. Release keeps cleartext disabled. -->
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>

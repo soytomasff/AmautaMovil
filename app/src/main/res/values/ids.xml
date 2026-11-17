@@ -1,0 +1,9 @@
+<resources>
+    <item name="homeAvailable" type="id" />
+    <item name="homeOccupied" type="id" />
+    <item name="homeCleaning" type="id" />
+    <item name="homeMaintenance" type="id" />
+    <item name="homeRegistered" type="id" />
+    <item name="homeCurrent" type="id" />
+    <item name="homeReservations" type="id" />
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp" android:padding="14dp"
+    android:orientation="vertical" android:background="@drawable/bg_card"
+    android:elevation="2dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="center_vertical">
+        <ImageView android:layout_width="28dp" android:layout_height="28dp"
+            android:src="@drawable/ic_nav_guests" android:tint="@color/brand"
+            android:contentDescription="@null" android:layout_marginEnd="12dp" />
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:orientation="vertical">
+            <TextView android:id="@+id/guestName" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:textStyle="bold"
+                android:textSize="16sp" android:textColor="@color/ink" />
+            <TextView android:id="@+id/guestDocument" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:textSize="13sp"
+                android:textColor="@color/muted" android:layout_marginTop="3dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="end"
+        android:layout_marginTop="8dp">
+        <Button android:id="@+id/viewGuest" style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content" android:layout_height="48dp"
+            android:text="@string/view_guest" />
+        <Button android:id="@+id/editGuest" style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="wrap_content" android:layout_height="48dp"
+            android:layout_marginStart="8dp" android:text="@string/edit_guest" />
+    </LinearLayout>
+</LinearLayout>

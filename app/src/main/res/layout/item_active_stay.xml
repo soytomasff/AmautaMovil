@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:padding="12dp"
+    android:layout_marginTop="8dp" android:background="@drawable/bg_card">
+    <TextView android:id="@+id/stayLabel" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:textColor="@color/ink" />
+    <Button android:id="@+id/confirmDepartureButton" android:layout_width="match_parent"
+        android:layout_height="48dp" android:text="@string/confirm_departure" />
+</LinearLayout>
